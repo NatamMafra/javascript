@@ -1,0 +1,116 @@
+1° algoritimo, escreva um algoritimo para trocar uma lâmpada?
+
+MÉTODO 5QS
+1-Quais são os dados de entrada necessários?
+ 	Nenhum
+2-O que devo fazer com estes dados?
+	--
+3-Quais são as restrições deste problema?
+ 	Não há restrições
+4-Qual é o resultado esperado?
+	Efetuar a troca da lâmpada antiga por uma nova
+5-Qual é a sequência de passos a serem feitas para chegar ao resultado?
+
+	1 Verificar se a lâmpada nova na dispensa
+	2 Desligar a energia da casa
+	3 Pegar uma escada doméstica
+	4 Leve até o local
+	5 Abrir a escada
+	6 Suba na escada até se aproximar da lâmpda
+	7 Segure a lâmpada firmemente e roqueie em sentido anti-horário até que ela se desprenda do bocal
+	8 Desça da escada e reserve a lâmpada antiga 
+	9 Pegue a lâmpada nova e suba pela escada até o bocal
+	10 Encaixe a parte metálica da lâmpada dentro do bocal
+	11 Rosqueie a lâmpada em sentido horário até que o movimento já não seja mais possível
+	12 Desça da escada
+	13 Ligue a energia novamente
+	14 Ligue o interruptor 
+	15 Verifique se a lâmpada acendeu
+	Se a lâmpada não ligou
+		16 Desligue a energia
+		17 Suba na escada 
+		18 Desrosqueie e rosqueie a lâmpada novamente
+		19 Desça da escada 
+		20 Ligue a energia novamente
+		21 Refaça o teste
+	 Se a lâmpada não ligou repita o processo a partir do passo 1 
+
+2° algoritimo, escreva um algoritimo para encher o tanque do carro
+
+
+MÉTODO 5QS
+1-Quais são os dados de entrada necessários?
+	--
+2-O que devo fazer com estes dados?
+	--
+3-Quais são as restrições deste problema?
+	A quantidade de combustível deve ser a maior possível não podendo ficar pela metade
+4-Qual é o resultado esperado?
+	Encher o tanque de combustível do carro
+5-Qual é a sequência de passos a serem feitas para chegar ao resultado?
+
+	1 encostar o carro próximo a bomba
+	2 abrir a tamba externa do tanque 
+	3 Desrrosquear o tampão do tanque
+	4 Colocar o tampão sobre a bomba de combustível
+	5 verificar se é possível introduzir mais combutível no tanque
+	Se for possível
+		6 retirar bico da bomba
+		7 Introduzir o bico totalmente na boca do tanque
+		8 Apertar o gatilho
+		9 Deixar o cumbustível entrar até a bomba pausar
+		10 Quando a bomba pausar retirar parcialmente o bico da boca do tanque
+		11 Apertar o gatilho novamente até encher o tanque por completo
+		12 Ao finalizar, retire o bico com o mesmo virado para cima evitando derrubar combutível sobre a lataria
+		13 Introduzir novamente o bico em seu suporte na bomba
+		14 Pegue o tampão de cima da bomba
+		15 Rosqueie em sentido horário na boca do tanque até o final
+		16 Feche a tampa 
+		17 Gere a folha de pagamento para o cliente
+		18 Finalize o processo
+ 	Se não for possível finalize o processo
+		  
+
+3° algoritimo, Escreva um algoritmo para um software que subtrai dois números e imprime na tela o resultado.
+
+MÉTODO 5QS
+1-Quais são os dados de entrada necessários?
+	Dois números iguais ou distintos escolhidos pelo usuário
+2-O que devo fazer com estes dados?
+	Subtrair o primeiro número pelo segundo
+3-Quais são as restrições deste problema?
+	Não há restrições
+4-Qual é o resultado esperado?
+	Obter o resultado de uma subtração e exibir na tela 
+5-Qual é a sequência de passos a serem feitas para chegar ao resultado?
+	
+	1 Peça o primeiro número ao usuário
+	2 Guarde o dado
+	3 Peça o segundo número ao usuário
+	4 Guarde o dado
+	5 Realize o cálculo = primeiro número - segundo número 
+	6 Imprima o resultado na tela
+	7 Finalize
+
+4° algoritmo, Escreva um algoritmo para um software que recebe o ano atual e a idade do usuário e imprime que ano ele nasceu.
+
+MÉTODO 5QS
+1-Quais são os dados de entrada necessários?
+	Ano atual no sistema
+	Idade atual do usuário
+2-O que devo fazer com estes dados?
+	Subtrair a idade atual do ano atual para obter um resultado
+3-Quais são as restrições deste problema?
+	A idade deve estar entre 1 e 120
+4-Qual é o resultado esperado?
+	Exibir na tela o ano em que o usuário nasceu
+5-Qual é a sequência de passos a serem feitas para chegar ao resultado?
+
+	1 Pergunte ao usuário quantos anos ele tem atualmente
+	2 Guarde o dado
+	3 Pergunte ao sistema operacional qual o ano atual
+	4 Guarde o dado
+	5 Realize o cálculo = ano atual - idade atual
+	6 Imprima o resultado
+	7 Finalize
+	

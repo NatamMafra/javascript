@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div>
+
+        <!--Calculado de dois valores-->
+        <div class="calculadora">
+            <h1>Calcule dois Valores</h1>
+            <input type="number" name="txtn1" id="txtn1" placeholder="Digite o primeiro número">
+            <input type="number" name="txtn2" id="txtn2" placeholder="Digite o segundo número">
+            <input type="button" id="somar" value="Somar">
+            <div id="resultado">Resultado</div>
+        </div>
+        <!--Calculadora de Média quatro notas-->
+        <div id="calcmedia">
+            <h1>Calcule a media de <br> 4 bimestres</h1>
+            <input type="number" name="nota1" id="nota1" placeholder="Digite a primeira nota">
+            <input type="number" name="nota2" id="nota2" placeholder="Digite a segunda nota">
+            <input type="number" name="nota3" id="nota3" placeholder="Digite a terceira nota">
+            <input type="number" name="nota4" id="nota4" placeholder="Digite a quarta nota">
+            <input type="button" id="dividir" value="Dividir">
+            <div id="resultado_media">Resultado</div>
+        </div>
+
+    </div>
+
+
+    <script>
+        //declaração da variável e do leitor do evento principal de soma        
+        var somar = window.document.getElementById('somar')
+        somar.addEventListener('click', calcule)
+
+
+        //evento principal
+        function calcule () {
+            var tn1 = window.document.getElementById ('txtn1')
+            var tn2 = window.document.querySelector ('input#txtn2')
+            var res = window.document.getElementById('resultado')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`
+        }
+
+
+        //declaração das variáveis calculadoera de médias
+
+
+        var dividir = window.document.querySelector('input#dividir')
+        dividir.addEventListener('click', dividirnotas)
+
+        function dividirnotas () {
+
+            var nota1 = window.document.querySelector('input#nota1')
+            var nota2 = window.document.querySelector('input#nota2')
+            var nota3 = window.document.querySelector('input#nota3')
+            var nota4 = window.document.querySelector('input#nota4')
+            var n1 = Number(nota1.value)
+            var n2 = Number(nota2.value)
+            var n3 = Number(nota3.value)
+            var n4 = Number(nota4.value)
+
+            var res_media = window.document.querySelector('div#resultado_media')
+
+            var  media = (n1 + n2 + n3 + n4) / 4 
+
+
+            if (media>=7) {
+                res_media.innerHTML = `<strong>APROVADO</strong>. Média Final igual a ${media}`
+            }
+
+            else {
+                res_media.innerHTML = `<strong>REPROVADO</strong>. Média Final igual a ${media}`
+
+            }
+            
+
+        }
+
+        
+
+
+
+
+        
+    </script>
+</body>
+</html>

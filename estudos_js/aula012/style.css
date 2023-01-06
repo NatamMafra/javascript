@@ -48,3 +48,21 @@ span.tempo {
     font-size: 10px;
 }
 
+
+@media screen  and (max-width: 600px) {
+    body {
+        background-color: bisque;
+    }
+    
+    div.relogio {
+        width: 320px;
+        height: 180px;
+    }
+
+    div.relogio div{
+        width: 90px;
+        height: 90px;
+        margin: 5px;
+        font-size: 40px;
+    }
+}

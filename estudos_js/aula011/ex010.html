@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pardal</title>
+</head>
+<body>
+    <h1>Radar de velocidade</h1>
+
+    <label for="velocidade">Velocidade do veículo</label>
+    <input type="number" name="velovidade" id="velocidade">
+
+    <input type="button" value="Verificar" id="btn-verificar">
+
+    <div id="res">
+
+    </div>
+
+    <script>
+        var verificar = window.document.querySelector('input#btn-verificar')
+        verificar.addEventListener('click', verificar_velocidade)
+        var velocidade = window.document.querySelector('input#velocidade')
+        
+        var resultado = window.document.querySelector('div#res')
+        
+        function verificar_velocidade () {
+            var veloc = Number(velocidade.value)
+            resultado.innerHTML = `<p>Você estava trafegando a ${veloc}km/h.</p>`
+            if (veloc>80) {
+                resultado.innerHTML += `<p>Você foi <strong>multado</strong> por ultrapassar  o limite de velocidade da via</p>`
+            } else  {
+                resultado.innerHTML += `<p>Continue trafegando com segurança</p>`
+            }
+        }
+    </script>
+
+</body>
+</html>

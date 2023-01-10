@@ -49,11 +49,7 @@ span.tempo {
 }
 
 
-@media screen  and (max-width: 600px) {
-    body {
-        background-color: bisque;
-    }
-    
+@media screen  and (max-width: 600px) {    
     div.relogio {
         width: 320px;
         height: 180px;

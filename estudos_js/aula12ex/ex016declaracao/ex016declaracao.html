@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preencha seus dados</title>
+    <link rel="stylesheet" href="estilo-tela.css" media="screen">
+    <link rel="stylesheet" href="estilo-impressao.css" media="print">
+</head>
+<body>
+
+    <!--Essa seção coletará todos os dodos necessários do usuário-->
+    <section id="pagina-dados" >
+        <header>
+            <h1>Auxiliar de declaração de residência</h1>
+            <p>Preencha seus dados corretamente e tenha sua declaração automaticamente</p>
+        </header>
+
+        <div id="form">
+            <form action="">
+
+                <!--nome completo-->
+                <div class="input-box">
+                    <label for="nome">Nome completo: </label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+
+                <!--cpf-->
+                <div class="input-box">
+                    <label for="cpf">CPF:</label>
+                    <input type="number" name="cpf" id="cpf">
+                </div>
+
+                <!--rg-->
+                <div class="input-box">
+                    <label for="rg">RG:</label>
+                    <input type="number" name="rg" id="rg">
+                </div>
+
+                <!--rua-->
+                <div class="input-box">
+                    <label for="rua">Rua:</label>
+                    <input type="text" name="rua" id="rua" minlength="10" maxlength="50">
+                </div>
+
+
+                <!--número-->
+
+                <!--complemento radio-->
+
+                <!--cidade-->
+
+                <!--estado-->
+
+                <!--cep-->
+
+                <!--cidade registro-->
+
+                <!--dia sistema-->
+
+                <!--mes sistema por extenso-->
+
+                <!--ano sistema-->
+
+
+
+
+
+
+
+                <input type="button" value="Preencher" id="preencher" onclick="preencherdeclaracao()">
+            </form>
+        </div>
+    </section>
+
+    <!--Essa seção será exibida na tela de impressão-->
+    <section id="pagina-declaracao">
+        <div>
+            <h1>Declaração de Residência</h1>
+
+            <p>
+                Eu <span id="dec-nome"></span>, portador do CPF de N° <span id="dec-cpf"></span> e da cédula de RG N° <span id="dec-rg"></span>, declaro sob  as penas da lei, que meu endereço é na:            
+            </p>
+
+            <p>
+                Rua/Av. <span id="dec-rua"></span>, N° <span id="dec-numero"></span>, complemento <span id="dec-complemento"></span>, bairro <span id="dec-bairro"></span>,  na cidade de <span id="dec-cidade"></span>, UF <span id="dec-estado"></span>, CEP <span id="dec-cep"></span>.
+            </p>
+            <br>
+            <p>
+                <span id="dec-cidade-cart"></span>, <span id="dec-dia"></span> de <span id="dec-mes-ext"></span> de <span id="dec-ano"></span>
+            </p>
+
+            <p id="conclusao">Proprietário/adquirente <br>Firma reconhecida por autenticidade</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
